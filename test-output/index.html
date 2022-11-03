@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-LinkedinSuite">
+              <span class="suite-name border-failed">LinkedinSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-LinkedinSuite">
+                    <span>E:\eclipse-workspace-selenium-July82022\LinkedinHybridFramework-July222022\src\test\resources\TestNG\TestNG.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-LinkedinSuite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-LinkedinSuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-LinkedinSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-LinkedinSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-LinkedinSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-LinkedinSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">16 methods, 4 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-LinkedinSuite" class="hide-methods failed suite-LinkedinSuite"> (hide)</a> <!-- hide-methods failed suite-LinkedinSuite -->
+                      <a href="#" panel-name="suite-LinkedinSuite" class="show-methods failed suite-LinkedinSuite"> (show)</a> <!-- show-methods failed suite-LinkedinSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-LinkedinSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LinkedinSuite" title="com.qa.linkedin.testcases.LinkedinFeedPageTest" hash-for-method="verifyFeedPageTitleTest">verifyFeedPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LinkedinSuite" title="com.qa.linkedin.testcases.LinkedinHomePageTest" hash-for-method="verifyLinkedinHomePageTitle">verifyLinkedinHomePageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LinkedinSuite" title="com.qa.linkedin.testcases.LinkedinLoginPageTest" hash-for-method="verifyLoginPageTitle">verifyLoginPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LinkedinSuite" title="com.qa.linkedin.testcases.LinkedinFeedPageTest" hash-for-method="verifyProfileRailcardTest">verifyProfileRailcardTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-LinkedinSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-LinkedinSuite" class="hide-methods passed suite-LinkedinSuite"> (hide)</a> <!-- hide-methods passed suite-LinkedinSuite -->
+                      <a href="#" panel-name="suite-LinkedinSuite" class="show-methods passed suite-LinkedinSuite"> (show)</a> <!-- show-methods passed suite-LinkedinSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-LinkedinSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LinkedinSuite" title="com.qa.linkedin.testcases.LinkedinFeedPageTest" hash-for-method="doLoginTest">doLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LinkedinSuite" title="com.qa.linkedin.testcases.LinkedinSearchResultsTest" hash-for-method="doLoginTest">doLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LinkedinSuite" title="com.qa.linkedin.testcases.LinkedinFeedPageTest" hash-for-method="doLogoutTest">doLogoutTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LinkedinSuite" title="com.qa.linkedin.testcases.LinkedinSearchResultsTest" hash-for-method="doLogoutTest">doLogoutTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LinkedinSuite" title="com.qa.linkedin.testcases.LinkedinSearchResultsTest" hash-for-method="doPeopleSearchTest(Lavanya)">doPeopleSearchTest(Lavanya)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LinkedinSuite" title="com.qa.linkedin.testcases.LinkedinSearchResultsTest" hash-for-method="doPeopleSearchTest(Venkatesh)">doPeopleSearchTest(Venkatesh)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LinkedinSuite" title="com.qa.linkedin.testcases.LinkedinSearchResultsTest" hash-for-method="doPeopleSearchTest(Jyoshna)">doPeopleSearchTest(Jyoshna)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LinkedinSuite" title="com.qa.linkedin.testcases.LinkedinSearchResultsTest" hash-for-method="doPeopleSearchTest(Ramesh)">doPeopleSearchTest(Ramesh)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LinkedinSuite" title="com.qa.linkedin.testcases.LinkedinSearchResultsTest" hash-for-method="doPeopleSearchTest(Shafi)">doPeopleSearchTest(Shafi)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LinkedinSuite" title="com.qa.linkedin.testcases.LinkedinSearchResultsTest" hash-for-method="doPeopleSearchTest(Priyanka)">doPeopleSearchTest(Priyanka)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LinkedinSuite" title="com.qa.linkedin.testcases.LinkedinHomePageTest" hash-for-method="verifyLinkedinLogoTest">verifyLinkedinLogoTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LinkedinSuite" title="com.qa.linkedin.testcases.LinkedinLoginPageTest" hash-for-method="verifySigninHeaderText">verifySigninHeaderText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-LinkedinSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-LinkedinSuite" class="panel LinkedinSuite">
+          <div class="suite-LinkedinSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.linkedin.testcases.LinkedinFeedPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFeedPageTitleTest">
+                  </a> <!-- verifyFeedPageTitleTest -->
+                  <span class="method-name">verifyFeedPageTitleTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: Feed | LinkedIn is not present expected [true] but found [false]
+	at com.qa.linkedin.testcases.LinkedinFeedPageTest.verifyFeedPageTitleTest(LinkedinFeedPageTest.java:50)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProfileRailcardTest">
+                  </a> <!-- verifyProfileRailcardTest -->
+                  <span class="method-name">verifyProfileRailcardTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[class*=&apos;feed-identity-module&apos;]&quot;}
+  (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;DESKTOP-0M1MH5T&apos;, ip: &apos;192.168.0.172&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [071f49cd83cd05765f49b2ae1f419272, findElement {using=css selector, value=div[class*=&apos;feed-identity-module&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60563}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60563/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 071f49cd83cd05765f49b2ae1f419272
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy16.isDisplayed(Unknown Source)
+	at com.qa.linkedin.pages.LinkedinFeedPage.isProfileRailCardPresent(LinkedinFeedPage.java:43)
+	at com.qa.linkedin.testcases.LinkedinFeedPageTest.verifyProfileRailcardTest(LinkedinFeedPageTest.java:42)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(verifying profile railcard element)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LinkedinSuite-class-failed -->
+          <div class="suite-LinkedinSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.linkedin.testcases.LinkedinHomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLinkedinHomePageTitle">
+                  </a> <!-- verifyLinkedinHomePageTitle -->
+                  <span class="method-name">verifyLinkedinHomePageTitle</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.qa.linkedin.testcases.LinkedinHomePageTest.verifyLinkedinHomePageTitle(LinkedinHomePageTest.java:30)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LinkedinSuite-class-failed -->
+          <div class="suite-LinkedinSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.linkedin.testcases.LinkedinLoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginPageTitle">
+                  </a> <!-- verifyLoginPageTitle -->
+                  <span class="method-name">verifyLoginPageTitle</span>
+                  <div class="stack-trace">java.lang.AssertionError: signin page title is not correct expected [true] but found [false]
+	at com.qa.linkedin.testcases.LinkedinLoginPageTest.verifyLoginPageTitle(LinkedinLoginPageTest.java:37)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LinkedinSuite-class-failed -->
+          <div class="suite-LinkedinSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.linkedin.testcases.LinkedinFeedPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLoginTest">
+                  </a> <!-- doLoginTest -->
+                  <span class="method-name">doLoginTest</span>
+                  <em>
+(login to linkedin)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogoutTest">
+                  </a> <!-- doLogoutTest -->
+                  <span class="method-name">doLogoutTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LinkedinSuite-class-passed -->
+          <div class="suite-LinkedinSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.linkedin.testcases.LinkedinHomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLinkedinLogoTest">
+                  </a> <!-- verifyLinkedinLogoTest -->
+                  <span class="method-name">verifyLinkedinLogoTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LinkedinSuite-class-passed -->
+          <div class="suite-LinkedinSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.linkedin.testcases.LinkedinSearchResultsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLoginTest">
+                  </a> <!-- doLoginTest -->
+                  <span class="method-name">doLoginTest</span>
+                  <em>
+(login to linkedin)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogoutTest">
+                  </a> <!-- doLogoutTest -->
+                  <span class="method-name">doLogoutTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doPeopleSearchTest(Lavanya)">
+                  </a> <!-- doPeopleSearchTest(Lavanya) -->
+                  <span class="method-name">doPeopleSearchTest</span>
+                  <span class="parameters">(Lavanya)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doPeopleSearchTest(Venkatesh)">
+                  </a> <!-- doPeopleSearchTest(Venkatesh) -->
+                  <span class="method-name">doPeopleSearchTest</span>
+                  <span class="parameters">(Venkatesh)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doPeopleSearchTest(Jyoshna)">
+                  </a> <!-- doPeopleSearchTest(Jyoshna) -->
+                  <span class="method-name">doPeopleSearchTest</span>
+                  <span class="parameters">(Jyoshna)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doPeopleSearchTest(Ramesh)">
+                  </a> <!-- doPeopleSearchTest(Ramesh) -->
+                  <span class="method-name">doPeopleSearchTest</span>
+                  <span class="parameters">(Ramesh)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doPeopleSearchTest(Shafi)">
+                  </a> <!-- doPeopleSearchTest(Shafi) -->
+                  <span class="method-name">doPeopleSearchTest</span>
+                  <span class="parameters">(Shafi)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doPeopleSearchTest(Priyanka)">
+                  </a> <!-- doPeopleSearchTest(Priyanka) -->
+                  <span class="method-name">doPeopleSearchTest</span>
+                  <span class="parameters">(Priyanka)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LinkedinSuite-class-passed -->
+          <div class="suite-LinkedinSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.linkedin.testcases.LinkedinLoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySigninHeaderText">
+                  </a> <!-- verifySigninHeaderText -->
+                  <span class="method-name">verifySigninHeaderText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LinkedinSuite-class-passed -->
+        </div> <!-- panel LinkedinSuite -->
+        <div panel-name="test-xml-LinkedinSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\eclipse-workspace-selenium-July82022\LinkedinHybridFramework-July222022\src\test\resources\TestNG\TestNG.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;LinkedinSuite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qa.linkedin.listeners.ExtentReportListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LinkedinTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.linkedin.testcases.LinkedinHomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.linkedin.testcases.LinkedinLoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.linkedin.testcases.LinkedinFeedPageTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.linkedin.testcases.LinkedinSearchResultsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LinkedinTest --&gt;
+&lt;/suite&gt; &lt;!-- LinkedinSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-LinkedinSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for LinkedinSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">LinkedinTest (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-LinkedinSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for LinkedinSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-LinkedinSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for LinkedinSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_LinkedinSuite');
+function tableData_LinkedinSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(16);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'doLoginTest')
+data.setCell(0, 2, 'com.qa.linkedin.testcases.LinkedinFeedPageTest')
+data.setCell(0, 3, 11319);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyProfileRailcardTest')
+data.setCell(1, 2, 'com.qa.linkedin.testcases.LinkedinFeedPageTest')
+data.setCell(1, 3, 10158);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'doLoginTest')
+data.setCell(2, 2, 'com.qa.linkedin.testcases.LinkedinSearchResultsTest')
+data.setCell(2, 3, 8188);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'doPeopleSearchTest')
+data.setCell(3, 2, 'com.qa.linkedin.testcases.LinkedinSearchResultsTest')
+data.setCell(3, 3, 6782);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'doPeopleSearchTest')
+data.setCell(4, 2, 'com.qa.linkedin.testcases.LinkedinSearchResultsTest')
+data.setCell(4, 3, 6745);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'doPeopleSearchTest')
+data.setCell(5, 2, 'com.qa.linkedin.testcases.LinkedinSearchResultsTest')
+data.setCell(5, 3, 6656);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'doPeopleSearchTest')
+data.setCell(6, 2, 'com.qa.linkedin.testcases.LinkedinSearchResultsTest')
+data.setCell(6, 3, 6193);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'doPeopleSearchTest')
+data.setCell(7, 2, 'com.qa.linkedin.testcases.LinkedinSearchResultsTest')
+data.setCell(7, 3, 5817);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'doPeopleSearchTest')
+data.setCell(8, 2, 'com.qa.linkedin.testcases.LinkedinSearchResultsTest')
+data.setCell(8, 3, 5753);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'doLogoutTest')
+data.setCell(9, 2, 'com.qa.linkedin.testcases.LinkedinSearchResultsTest')
+data.setCell(9, 3, 3332);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'doLogoutTest')
+data.setCell(10, 2, 'com.qa.linkedin.testcases.LinkedinFeedPageTest')
+data.setCell(10, 3, 1694);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyLoginPageTitle')
+data.setCell(11, 2, 'com.qa.linkedin.testcases.LinkedinLoginPageTest')
+data.setCell(11, 3, 110);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyLinkedinLogoTest')
+data.setCell(12, 2, 'com.qa.linkedin.testcases.LinkedinHomePageTest')
+data.setCell(12, 3, 93);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifySigninHeaderText')
+data.setCell(13, 2, 'com.qa.linkedin.testcases.LinkedinLoginPageTest')
+data.setCell(13, 3, 52);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyLinkedinHomePageTitle')
+data.setCell(14, 2, 'com.qa.linkedin.testcases.LinkedinHomePageTest')
+data.setCell(14, 3, 51);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyFeedPageTitleTest')
+data.setCell(15, 2, 'com.qa.linkedin.testcases.LinkedinFeedPageTest')
+data.setCell(15, 3, 22);
+window.suiteTableData['LinkedinSuite']= { tableData: data, tableDiv: 'times-div-LinkedinSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-LinkedinSuite">
+              </div> <!-- times-div-LinkedinSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-LinkedinSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for LinkedinSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-LinkedinSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-LinkedinSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.linkedin.testcases.LinkedinHomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">12056 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLinkedinHomePageTitle</span>
+                <span class="method-start">12230 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLinkedinLogoTest</span>
+                <span class="method-start">12928 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">13024 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">14956 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.linkedin.testcases.LinkedinLoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">16160 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">22216 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLoginPageTitle</span>
+                <span class="method-start">25871 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySigninHeaderText</span>
+                <span class="method-start">26896 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">26955 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.linkedin.testcases.LinkedinFeedPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">28909 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">34172 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">doLoginTest</span>
+                <span class="method-start">36240 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">doLogoutTest</span>
+                <span class="method-start">47566 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyFeedPageTitleTest</span>
+                <span class="method-start">49270 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyProfileRailcardTest</span>
+                <span class="method-start">56717 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">67054 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.linkedin.testcases.LinkedinSearchResultsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">68086 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">72270 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">doLoginTest</span>
+                <span class="method-start">74368 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">doPeopleSearchTest(Ramesh)</span>
+                <span class="method-start">84917 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">doPeopleSearchTest(Venkatesh)</span>
+                <span class="method-start">91575 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">doPeopleSearchTest(Shafi)</span>
+                <span class="method-start">97771 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">doPeopleSearchTest(Jyoshna)</span>
+                <span class="method-start">104518 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">doPeopleSearchTest(Lavanya)</span>
+                <span class="method-start">111304 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">doPeopleSearchTest(Priyanka)</span>
+                <span class="method-start">117125 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">doLogoutTest</span>
+                <span class="method-start">122888 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">126223 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

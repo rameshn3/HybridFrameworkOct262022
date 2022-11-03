@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [LinkedinSuite]">
+  <listeners>
+    <listener class-name="com.qa.linkedin.listeners.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="LinkedinTest(failed)">
+    <classes>
+      <class name="com.qa.linkedin.testcases.LinkedinFeedPageTest">
+        <methods>
+          <include name="doLoginTest"/>
+          <include name="verifyFeedPageTitleTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="verifyProfileRailcardTest"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.qa.linkedin.testcases.LinkedinFeedPageTest -->
+      <class name="com.qa.linkedin.testcases.LinkedinHomePageTest">
+        <methods>
+          <include name="verifyLinkedinHomePageTitle"/>
+          <include name="afterClass"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.qa.linkedin.testcases.LinkedinHomePageTest -->
+      <class name="com.qa.linkedin.testcases.LinkedinLoginPageTest">
+        <methods>
+          <include name="verifyLoginPageTitle"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.qa.linkedin.testcases.LinkedinLoginPageTest -->
+    </classes>
+  </test> <!-- LinkedinTest(failed) -->
+</suite> <!-- Failed suite [LinkedinSuite] -->

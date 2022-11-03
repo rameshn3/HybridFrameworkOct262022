@@ -1,0 +1,318 @@
+2022-07-29 07:51:33 DEBUG TestBase:54 - reading the browser value from properties file
+2022-07-29 07:51:33 INFO  TestBase:38 - Create Object for Properties class
+2022-07-29 07:51:33 INFO  TestBase:40 - Read the properties file
+2022-07-29 07:51:33 INFO  TestBase:56 - Launching the browser:chrome
+2022-07-29 07:51:50 DEBUG TestBase:73 -  maximize the window
+2022-07-29 07:51:51 INFO  TestBase:75 - implicitwait
+2022-07-29 07:51:51 INFO  TestBase:77 - create object for WebDriverWait class
+2022-07-29 07:51:51 INFO  TestBase:38 - Create Object for Properties class
+2022-07-29 07:51:51 INFO  TestBase:40 - Read the properties file
+2022-07-29 07:51:51 DEBUG TestBase:79 - open the application url :https://linkedin.com
+2022-07-29 07:51:51 INFO  TestBase:38 - Create Object for Properties class
+2022-07-29 07:51:51 INFO  TestBase:40 - Read the properties file
+2022-07-29 07:52:00 INFO  LinkedinHomePageTest:37 - create the page class object
+2022-07-29 07:52:01 INFO  LinkedinHomePageTest:27 - started verifying the linkedin home page title
+2022-07-29 07:52:01 INFO  LinkedinHomePage:28 - fetching the LinkedinHomePage title
+2022-07-29 07:52:01 INFO  LinkedinHomePageTest:29 - actual page title is:LinkedIn: Log In or Sign Up
+2022-07-29 07:52:01 INFO  LinkedinHomePageTest:21 - started verifyLinkedinLogoTest()
+2022-07-29 07:52:01 INFO  LinkedinHomePage:33 - checking linkedinlogo is present or not
+2022-07-29 07:52:02 INFO  LinkedinHomePageTest:44 - clearing the browser cache
+2022-07-29 07:52:03 DEBUG TestBase:86 - close the browser
+2022-07-29 07:52:05 DEBUG TestBase:54 - reading the browser value from properties file
+2022-07-29 07:52:05 INFO  TestBase:38 - Create Object for Properties class
+2022-07-29 07:52:05 INFO  TestBase:40 - Read the properties file
+2022-07-29 07:52:05 INFO  TestBase:56 - Launching the browser:chrome
+2022-07-29 07:52:08 DEBUG TestBase:73 -  maximize the window
+2022-07-29 07:52:08 INFO  TestBase:75 - implicitwait
+2022-07-29 07:52:08 INFO  TestBase:77 - create object for WebDriverWait class
+2022-07-29 07:52:08 INFO  TestBase:38 - Create Object for Properties class
+2022-07-29 07:52:08 INFO  TestBase:40 - Read the properties file
+2022-07-29 07:52:08 DEBUG TestBase:79 - open the application url :https://linkedin.com
+2022-07-29 07:52:08 INFO  TestBase:38 - Create Object for Properties class
+2022-07-29 07:52:08 INFO  TestBase:40 - Read the properties file
+2022-07-29 07:52:11 INFO  LinkedinLoginPageTest:19 - creating login page object
+2022-07-29 07:52:11 INFO  LinkedinHomePage:38 - click on signin link in linkedin home page
+2022-07-29 07:52:11 DEBUG BasePageWebActions:42 - wait for the element to be clickable or not
+2022-07-29 07:52:12 DEBUG BasePageWebActions:44 - click on the given element
+2022-07-29 07:52:19 DEBUG LinkedinLoginPageTest:36 - *****Start verifyLoginPageTitle()********
+2022-07-29 07:52:19 INFO  LinkedinLoginPage:32 - fetching the linkedin signin page title
+2022-07-29 07:52:19 DEBUG LinkedinLoginPageTest:39 - *****end of verifyLoginPageTitle()********
+2022-07-29 07:52:19 DEBUG LinkedinLoginPageTest:28 - *****Start verifySigninHeaderText()********
+2022-07-29 07:52:19 INFO  LinkedinLoginPage:37 - check signin header text is present or not
+2022-07-29 07:52:20 DEBUG LinkedinLoginPageTest:31 - *****end of verifySigninHeaderText()********
+2022-07-29 07:52:20 DEBUG TestBase:86 - close the browser
+2022-07-29 07:52:21 DEBUG TestBase:54 - reading the browser value from properties file
+2022-07-29 07:52:21 INFO  TestBase:38 - Create Object for Properties class
+2022-07-29 07:52:21 INFO  TestBase:40 - Read the properties file
+2022-07-29 07:52:21 INFO  TestBase:56 - Launching the browser:chrome
+2022-07-29 07:52:24 DEBUG TestBase:73 -  maximize the window
+2022-07-29 07:52:25 INFO  TestBase:75 - implicitwait
+2022-07-29 07:52:25 INFO  TestBase:77 - create object for WebDriverWait class
+2022-07-29 07:52:25 INFO  TestBase:38 - Create Object for Properties class
+2022-07-29 07:52:25 INFO  TestBase:40 - Read the properties file
+2022-07-29 07:52:25 DEBUG TestBase:79 - open the application url :https://linkedin.com
+2022-07-29 07:52:25 INFO  TestBase:38 - Create Object for Properties class
+2022-07-29 07:52:25 INFO  TestBase:40 - Read the properties file
+2022-07-29 07:52:27 INFO  LinkedinFeedPageTest:23 - creating login page object
+2022-07-29 07:52:27 INFO  LinkedinHomePage:38 - click on signin link in linkedin home page
+2022-07-29 07:52:27 DEBUG BasePageWebActions:42 - wait for the element to be clickable or not
+2022-07-29 07:52:28 DEBUG BasePageWebActions:44 - click on the given element
+2022-07-29 07:52:31 DEBUG LinkedinFeedPageTest:33 - starts---doLoginTest()-----
+2022-07-29 07:52:31 INFO  TestBase:38 - Create Object for Properties class
+2022-07-29 07:52:31 INFO  TestBase:40 - Read the properties file
+2022-07-29 07:52:31 INFO  TestBase:38 - Create Object for Properties class
+2022-07-29 07:52:31 INFO  TestBase:40 - Read the properties file
+2022-07-29 07:52:31 DEBUG LinkedinLoginPage:48 - perform the login action 
+2022-07-29 07:52:31 INFO  LinkedinLoginPage:49 - clear the content and type in emailEditbox
+2022-07-29 07:52:31 DEBUG BasePageWebActions:78 - wait for the element to be clickable or not
+2022-07-29 07:52:32 DEBUG BasePageWebActions:80 - clear the content in given editbox element
+2022-07-29 07:52:32 INFO  LinkedinLoginPage:52 - clear the content and type in passwordEditbox
+2022-07-29 07:52:32 DEBUG BasePageWebActions:78 - wait for the element to be clickable or not
+2022-07-29 07:52:32 DEBUG BasePageWebActions:80 - clear the content in given editbox element
+2022-07-29 07:52:33 INFO  LinkedinLoginPage:43 - click on signinBtn in login page
+2022-07-29 07:52:33 DEBUG BasePageWebActions:42 - wait for the element to be clickable or not
+2022-07-29 07:52:33 DEBUG BasePageWebActions:44 - click on the given element
+2022-07-29 07:52:41 INFO  LinkedinFeedPageTest:35 - Login is Successful
+2022-07-29 07:52:41 DEBUG LinkedinFeedPageTest:57 - ***Starts doLogoutTest()****
+2022-07-29 07:52:41 INFO  LinkedinFeedPage:47 - click on profilemeicon
+2022-07-29 07:52:41 DEBUG BasePageWebActions:42 - wait for the element to be clickable or not
+2022-07-29 07:52:41 DEBUG BasePageWebActions:44 - click on the given element
+2022-07-29 07:52:43 DEBUG BasePageWebActions:42 - wait for the element to be clickable or not
+2022-07-29 07:52:43 DEBUG BasePageWebActions:44 - click on the given element
+2022-07-29 07:52:43 DEBUG LinkedinFeedPageTest:49 - ***Starts verifyFeedPageTitleTest()****
+2022-07-29 07:52:43 INFO  LinkedinFeedPage:37 - fethcing the Linkedin feed page title
+2022-07-29 07:52:43 DEBUG LinkedinFeedPageTest:51 - ***end verifyFeedPageTitleTest()****
+2022-07-29 07:52:43 DEBUG LinkedinFeedPageTest:41 - ***Starts verifyProfileRailcardTest()****
+2022-07-29 07:52:43 INFO  LinkedinFeedPage:42 - checking the profile rail card availability
+2022-07-29 07:52:43 DEBUG LinkedinFeedPageTest:43 - ***end verifyProfileRailcardTest()****
+2022-07-29 07:52:43 DEBUG TestBase:86 - close the browser
+2022-07-29 07:52:44 DEBUG TestBase:54 - reading the browser value from properties file
+2022-07-29 07:52:44 INFO  TestBase:38 - Create Object for Properties class
+2022-07-29 07:52:44 INFO  TestBase:40 - Read the properties file
+2022-07-29 07:52:44 INFO  TestBase:56 - Launching the browser:chrome
+2022-07-29 07:52:47 DEBUG TestBase:73 -  maximize the window
+2022-07-29 07:52:47 INFO  TestBase:75 - implicitwait
+2022-07-29 07:52:47 INFO  TestBase:77 - create object for WebDriverWait class
+2022-07-29 07:52:47 INFO  TestBase:38 - Create Object for Properties class
+2022-07-29 07:52:47 INFO  TestBase:40 - Read the properties file
+2022-07-29 07:52:47 DEBUG TestBase:79 - open the application url :https://linkedin.com
+2022-07-29 07:52:47 INFO  TestBase:38 - Create Object for Properties class
+2022-07-29 07:52:47 INFO  TestBase:40 - Read the properties file
+2022-07-29 07:52:49 INFO  LinkedinSearchResultsTest:31 - creating login page object
+2022-07-29 07:52:49 INFO  LinkedinHomePage:38 - click on signin link in linkedin home page
+2022-07-29 07:52:49 DEBUG BasePageWebActions:42 - wait for the element to be clickable or not
+2022-07-29 07:52:50 DEBUG BasePageWebActions:44 - click on the given element
+2022-07-29 07:52:52 DEBUG LinkedinSearchResultsTest:41 - starts---doLoginTest()-----
+2022-07-29 07:52:52 INFO  TestBase:38 - Create Object for Properties class
+2022-07-29 07:52:52 INFO  TestBase:40 - Read the properties file
+2022-07-29 07:52:52 INFO  TestBase:38 - Create Object for Properties class
+2022-07-29 07:52:52 INFO  TestBase:40 - Read the properties file
+2022-07-29 07:52:52 DEBUG LinkedinLoginPage:48 - perform the login action 
+2022-07-29 07:52:52 INFO  LinkedinLoginPage:49 - clear the content and type in emailEditbox
+2022-07-29 07:52:52 DEBUG BasePageWebActions:78 - wait for the element to be clickable or not
+2022-07-29 07:52:52 DEBUG BasePageWebActions:80 - clear the content in given editbox element
+2022-07-29 07:52:53 INFO  LinkedinLoginPage:52 - clear the content and type in passwordEditbox
+2022-07-29 07:52:53 DEBUG BasePageWebActions:78 - wait for the element to be clickable or not
+2022-07-29 07:52:53 DEBUG BasePageWebActions:80 - clear the content in given editbox element
+2022-07-29 07:52:53 INFO  LinkedinLoginPage:43 - click on signinBtn in login page
+2022-07-29 07:52:53 DEBUG BasePageWebActions:42 - wait for the element to be clickable or not
+2022-07-29 07:52:53 DEBUG BasePageWebActions:44 - click on the given element
+2022-07-29 07:53:01 INFO  LinkedinSearchResultsTest:43 - Login is Successful
+2022-07-29 07:53:01 DEBUG ExcelUtils:28 - Specify the path of file :E:\eclipse-workspace-selenium-July82022\LinkedinHybridFramework-July222022\src\test\java\com\qa\linkedin\data\testData.xlsx
+2022-07-29 07:53:01 DEBUG ExcelUtils:31 - read the file
+2022-07-29 07:53:01 DEBUG ExcelUtils:33 - Load workbook
+2022-07-29 07:53:03 DEBUG ExcelUtils:38 - fetch the row count
+2022-07-29 07:53:03 DEBUG ExcelUtils:40 - number of rows in the excel sheet is-->6
+2022-07-29 07:53:03 DEBUG ExcelUtils:42 - number of columns in the excel sheet is -->1
+2022-07-29 07:53:03 DEBUG LinkedinSearchResultsTest:48 - perofrming the doPeopleSearchTest() for:Ramesh
+2022-07-29 07:53:03 DEBUG LinkedinFeedPage:55 - clear & type the keyword Ramesh in searchEditbox
+2022-07-29 07:53:03 DEBUG BasePageWebActions:78 - wait for the element to be clickable or not
+2022-07-29 07:53:03 DEBUG BasePageWebActions:80 - clear the content in given editbox element
+2022-07-29 07:53:07 INFO  LinkedinSearchResultsTest:51 - click on seeAllpeopleResultsLink
+2022-07-29 07:53:07 INFO  LinkedinSearchResultsPage:38 - click on seeAllPeopleResultsLink
+2022-07-29 07:53:07 DEBUG BasePageWebActions:42 - wait for the element to be clickable or not
+2022-07-29 07:53:07 DEBUG BasePageWebActions:44 - click on the given element
+2022-07-29 07:53:09 INFO  LinkedinSearchResultsTest:54 - verify the search results page title
+2022-07-29 07:53:09 DEBUG LinkedinSearchResultsPage:28 - fetching searchResults page title
+2022-07-29 07:53:09 INFO  LinkedinSearchResultsTest:56 - fetching search results count for:Ramesh
+2022-07-29 07:53:09 INFO  LinkedinSearchResultsPage:33 - get the results count text in results page
+2022-07-29 07:53:09 DEBUG BasePageWebActions:71 - wait for the visibility of an element
+2022-07-29 07:53:09 DEBUG BasePageWebActions:73 - fetch the text for an element
+2022-07-29 07:53:09 DEBUG LinkedinSearchResultsPage:53 - resuls count is:304,000
+2022-07-29 07:53:09 DEBUG LinkedinSearchResultsPage:54 - convert the string into long format
+2022-07-29 07:53:09 INFO  LinkedinSearchResultsTest:58 - count for Ramesh is:304000
+2022-07-29 07:53:09 INFO  LinkedinSearchResultsTest:59 - click on Home tab
+2022-07-29 07:53:09 INFO  LinkedinSearchResultsPage:44 - click on HomeTab
+2022-07-29 07:53:09 DEBUG BasePageWebActions:42 - wait for the element to be clickable or not
+2022-07-29 07:53:09 DEBUG BasePageWebActions:44 - click on the given element
+2022-07-29 07:53:09 DEBUG LinkedinSearchResultsTest:48 - perofrming the doPeopleSearchTest() for:Venkatesh
+2022-07-29 07:53:09 DEBUG LinkedinFeedPage:55 - clear & type the keyword Venkatesh in searchEditbox
+2022-07-29 07:53:09 DEBUG BasePageWebActions:78 - wait for the element to be clickable or not
+2022-07-29 07:53:09 DEBUG BasePageWebActions:80 - clear the content in given editbox element
+2022-07-29 07:53:14 INFO  LinkedinSearchResultsTest:51 - click on seeAllpeopleResultsLink
+2022-07-29 07:53:14 INFO  LinkedinSearchResultsPage:38 - click on seeAllPeopleResultsLink
+2022-07-29 07:53:14 DEBUG BasePageWebActions:42 - wait for the element to be clickable or not
+2022-07-29 07:53:15 DEBUG BasePageWebActions:44 - click on the given element
+2022-07-29 07:53:16 INFO  LinkedinSearchResultsTest:54 - verify the search results page title
+2022-07-29 07:53:16 DEBUG LinkedinSearchResultsPage:28 - fetching searchResults page title
+2022-07-29 07:53:16 INFO  LinkedinSearchResultsTest:56 - fetching search results count for:Venkatesh
+2022-07-29 07:53:16 INFO  LinkedinSearchResultsPage:33 - get the results count text in results page
+2022-07-29 07:53:16 DEBUG BasePageWebActions:71 - wait for the visibility of an element
+2022-07-29 07:53:16 DEBUG BasePageWebActions:73 - fetch the text for an element
+2022-07-29 07:53:16 DEBUG LinkedinSearchResultsPage:53 - resuls count is:116,000
+2022-07-29 07:53:16 DEBUG LinkedinSearchResultsPage:54 - convert the string into long format
+2022-07-29 07:53:16 INFO  LinkedinSearchResultsTest:58 - count for Venkatesh is:116000
+2022-07-29 07:53:16 INFO  LinkedinSearchResultsTest:59 - click on Home tab
+2022-07-29 07:53:16 INFO  LinkedinSearchResultsPage:44 - click on HomeTab
+2022-07-29 07:53:16 DEBUG BasePageWebActions:42 - wait for the element to be clickable or not
+2022-07-29 07:53:16 DEBUG BasePageWebActions:44 - click on the given element
+2022-07-29 07:53:16 DEBUG LinkedinSearchResultsTest:48 - perofrming the doPeopleSearchTest() for:Shafi
+2022-07-29 07:53:16 DEBUG LinkedinFeedPage:55 - clear & type the keyword Shafi in searchEditbox
+2022-07-29 07:53:16 DEBUG BasePageWebActions:78 - wait for the element to be clickable or not
+2022-07-29 07:53:17 DEBUG BasePageWebActions:80 - clear the content in given editbox element
+2022-07-29 07:53:21 INFO  LinkedinSearchResultsTest:51 - click on seeAllpeopleResultsLink
+2022-07-29 07:53:21 INFO  LinkedinSearchResultsPage:38 - click on seeAllPeopleResultsLink
+2022-07-29 07:53:21 DEBUG BasePageWebActions:42 - wait for the element to be clickable or not
+2022-07-29 07:53:21 DEBUG BasePageWebActions:44 - click on the given element
+2022-07-29 07:53:23 INFO  LinkedinSearchResultsTest:54 - verify the search results page title
+2022-07-29 07:53:23 DEBUG LinkedinSearchResultsPage:28 - fetching searchResults page title
+2022-07-29 07:53:23 INFO  LinkedinSearchResultsTest:56 - fetching search results count for:Shafi
+2022-07-29 07:53:23 INFO  LinkedinSearchResultsPage:33 - get the results count text in results page
+2022-07-29 07:53:23 DEBUG BasePageWebActions:71 - wait for the visibility of an element
+2022-07-29 07:53:23 DEBUG BasePageWebActions:73 - fetch the text for an element
+2022-07-29 07:53:23 DEBUG LinkedinSearchResultsPage:53 - resuls count is:42,000
+2022-07-29 07:53:23 DEBUG LinkedinSearchResultsPage:54 - convert the string into long format
+2022-07-29 07:53:23 INFO  LinkedinSearchResultsTest:58 - count for Shafi is:42000
+2022-07-29 07:53:23 INFO  LinkedinSearchResultsTest:59 - click on Home tab
+2022-07-29 07:53:23 INFO  LinkedinSearchResultsPage:44 - click on HomeTab
+2022-07-29 07:53:23 DEBUG BasePageWebActions:42 - wait for the element to be clickable or not
+2022-07-29 07:53:23 DEBUG BasePageWebActions:44 - click on the given element
+2022-07-29 07:53:23 DEBUG LinkedinSearchResultsTest:48 - perofrming the doPeopleSearchTest() for:Jyoshna
+2022-07-29 07:53:23 DEBUG LinkedinFeedPage:55 - clear & type the keyword Jyoshna in searchEditbox
+2022-07-29 07:53:23 DEBUG BasePageWebActions:78 - wait for the element to be clickable or not
+2022-07-29 07:53:24 DEBUG BasePageWebActions:80 - clear the content in given editbox element
+2022-07-29 07:53:28 INFO  LinkedinSearchResultsTest:51 - click on seeAllpeopleResultsLink
+2022-07-29 07:53:28 INFO  LinkedinSearchResultsPage:38 - click on seeAllPeopleResultsLink
+2022-07-29 07:53:28 DEBUG BasePageWebActions:42 - wait for the element to be clickable or not
+2022-07-29 07:53:28 DEBUG BasePageWebActions:44 - click on the given element
+2022-07-29 07:53:29 INFO  LinkedinSearchResultsTest:54 - verify the search results page title
+2022-07-29 07:53:29 DEBUG LinkedinSearchResultsPage:28 - fetching searchResults page title
+2022-07-29 07:53:29 INFO  LinkedinSearchResultsTest:56 - fetching search results count for:Jyoshna
+2022-07-29 07:53:29 INFO  LinkedinSearchResultsPage:33 - get the results count text in results page
+2022-07-29 07:53:29 DEBUG BasePageWebActions:71 - wait for the visibility of an element
+2022-07-29 07:53:29 DEBUG BasePageWebActions:73 - fetch the text for an element
+2022-07-29 07:53:29 DEBUG LinkedinSearchResultsPage:53 - resuls count is:1,700
+2022-07-29 07:53:29 DEBUG LinkedinSearchResultsPage:54 - convert the string into long format
+2022-07-29 07:53:29 INFO  LinkedinSearchResultsTest:58 - count for Jyoshna is:1700
+2022-07-29 07:53:29 INFO  LinkedinSearchResultsTest:59 - click on Home tab
+2022-07-29 07:53:29 INFO  LinkedinSearchResultsPage:44 - click on HomeTab
+2022-07-29 07:53:29 DEBUG BasePageWebActions:42 - wait for the element to be clickable or not
+2022-07-29 07:53:30 DEBUG BasePageWebActions:44 - click on the given element
+2022-07-29 07:53:30 DEBUG LinkedinSearchResultsTest:48 - perofrming the doPeopleSearchTest() for:Lavanya
+2022-07-29 07:53:30 DEBUG LinkedinFeedPage:55 - clear & type the keyword Lavanya in searchEditbox
+2022-07-29 07:53:30 DEBUG BasePageWebActions:78 - wait for the element to be clickable or not
+2022-07-29 07:53:30 DEBUG BasePageWebActions:80 - clear the content in given editbox element
+2022-07-29 07:53:34 INFO  LinkedinSearchResultsTest:51 - click on seeAllpeopleResultsLink
+2022-07-29 07:53:34 INFO  LinkedinSearchResultsPage:38 - click on seeAllPeopleResultsLink
+2022-07-29 07:53:34 DEBUG BasePageWebActions:42 - wait for the element to be clickable or not
+2022-07-29 07:53:34 DEBUG BasePageWebActions:44 - click on the given element
+2022-07-29 07:53:35 INFO  LinkedinSearchResultsTest:54 - verify the search results page title
+2022-07-29 07:53:35 DEBUG LinkedinSearchResultsPage:28 - fetching searchResults page title
+2022-07-29 07:53:35 INFO  LinkedinSearchResultsTest:56 - fetching search results count for:Lavanya
+2022-07-29 07:53:35 INFO  LinkedinSearchResultsPage:33 - get the results count text in results page
+2022-07-29 07:53:35 DEBUG BasePageWebActions:71 - wait for the visibility of an element
+2022-07-29 07:53:36 DEBUG BasePageWebActions:73 - fetch the text for an element
+2022-07-29 07:53:36 DEBUG LinkedinSearchResultsPage:53 - resuls count is:51,000
+2022-07-29 07:53:36 DEBUG LinkedinSearchResultsPage:54 - convert the string into long format
+2022-07-29 07:53:36 INFO  LinkedinSearchResultsTest:58 - count for Lavanya is:51000
+2022-07-29 07:53:36 INFO  LinkedinSearchResultsTest:59 - click on Home tab
+2022-07-29 07:53:36 INFO  LinkedinSearchResultsPage:44 - click on HomeTab
+2022-07-29 07:53:36 DEBUG BasePageWebActions:42 - wait for the element to be clickable or not
+2022-07-29 07:53:36 DEBUG BasePageWebActions:44 - click on the given element
+2022-07-29 07:53:36 DEBUG LinkedinSearchResultsTest:48 - perofrming the doPeopleSearchTest() for:Priyanka
+2022-07-29 07:53:36 DEBUG LinkedinFeedPage:55 - clear & type the keyword Priyanka in searchEditbox
+2022-07-29 07:53:36 DEBUG BasePageWebActions:78 - wait for the element to be clickable or not
+2022-07-29 07:53:36 DEBUG BasePageWebActions:80 - clear the content in given editbox element
+2022-07-29 07:53:40 INFO  LinkedinSearchResultsTest:51 - click on seeAllpeopleResultsLink
+2022-07-29 07:53:40 INFO  LinkedinSearchResultsPage:38 - click on seeAllPeopleResultsLink
+2022-07-29 07:53:40 DEBUG BasePageWebActions:42 - wait for the element to be clickable or not
+2022-07-29 07:53:40 DEBUG BasePageWebActions:44 - click on the given element
+2022-07-29 07:53:42 INFO  LinkedinSearchResultsTest:54 - verify the search results page title
+2022-07-29 07:53:42 DEBUG LinkedinSearchResultsPage:28 - fetching searchResults page title
+2022-07-29 07:53:42 INFO  LinkedinSearchResultsTest:56 - fetching search results count for:Priyanka
+2022-07-29 07:53:42 INFO  LinkedinSearchResultsPage:33 - get the results count text in results page
+2022-07-29 07:53:42 DEBUG BasePageWebActions:71 - wait for the visibility of an element
+2022-07-29 07:53:42 DEBUG BasePageWebActions:73 - fetch the text for an element
+2022-07-29 07:53:42 DEBUG LinkedinSearchResultsPage:53 - resuls count is:297,000
+2022-07-29 07:53:42 DEBUG LinkedinSearchResultsPage:54 - convert the string into long format
+2022-07-29 07:53:42 INFO  LinkedinSearchResultsTest:58 - count for Priyanka is:297000
+2022-07-29 07:53:42 INFO  LinkedinSearchResultsTest:59 - click on Home tab
+2022-07-29 07:53:42 INFO  LinkedinSearchResultsPage:44 - click on HomeTab
+2022-07-29 07:53:42 DEBUG BasePageWebActions:42 - wait for the element to be clickable or not
+2022-07-29 07:53:42 DEBUG BasePageWebActions:44 - click on the given element
+2022-07-29 07:53:42 INFO  LinkedinSearchResultsTest:72 - performing the logout from linkedin
+2022-07-29 07:53:44 INFO  LinkedinFeedPage:47 - click on profilemeicon
+2022-07-29 07:53:44 DEBUG BasePageWebActions:42 - wait for the element to be clickable or not
+2022-07-29 07:53:44 DEBUG BasePageWebActions:44 - click on the given element
+2022-07-29 07:53:45 DEBUG BasePageWebActions:42 - wait for the element to be clickable or not
+2022-07-29 07:53:45 DEBUG BasePageWebActions:44 - click on the given element
+2022-07-29 07:53:45 DEBUG TestBase:86 - close the browser
+2022-07-29 07:53:46 DEBUG cache:45 - Couldn't find template in cache for "v3html/v3-html-index.ftl"("en", UTF-8, parsed); will try to load it.
+2022-07-29 07:53:46 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/v3-html-index_en.ftl"): Not found
+2022-07-29 07:53:46 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/v3-html-index.ftl"): Found
+2022-07-29 07:53:46 DEBUG cache:45 - Loading template for "v3html/v3-html-index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/v3-html-index.ftl"
+2022-07-29 07:53:47 DEBUG cache:45 - Couldn't find template in cache for "v3html/v3-html-head.ftl"("en", UTF-8, parsed); will try to load it.
+2022-07-29 07:53:47 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/v3-html-head_en.ftl"): Not found
+2022-07-29 07:53:47 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/v3-html-head.ftl"): Found
+2022-07-29 07:53:47 DEBUG cache:45 - Loading template for "v3html/v3-html-head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/v3-html-head.ftl"
+2022-07-29 07:53:47 DEBUG cache:45 - Couldn't find template in cache for "v3html/v3-html-nav.ftl"("en", UTF-8, parsed); will try to load it.
+2022-07-29 07:53:47 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/v3-html-nav_en.ftl"): Not found
+2022-07-29 07:53:47 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/v3-html-nav.ftl"): Found
+2022-07-29 07:53:47 DEBUG cache:45 - Loading template for "v3html/v3-html-nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/v3-html-nav.ftl"
+2022-07-29 07:53:47 DEBUG cache:45 - Couldn't find template in cache for "v3html/test-view/v3-html-test-view.ftl"("en", UTF-8, parsed); will try to load it.
+2022-07-29 07:53:47 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/test-view/v3-html-test-view_en.ftl"): Not found
+2022-07-29 07:53:47 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/test-view/v3-html-test-view.ftl"): Found
+2022-07-29 07:53:47 DEBUG cache:45 - Loading template for "v3html/test-view/v3-html-test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/test-view/v3-html-test-view.ftl"
+2022-07-29 07:53:47 DEBUG cache:45 - Couldn't find template in cache for "v3html/test-view/v3-html-test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+2022-07-29 07:53:47 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/test-view/v3-html-test-view-charts_en.ftl"): Not found
+2022-07-29 07:53:47 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/test-view/v3-html-test-view-charts.ftl"): Found
+2022-07-29 07:53:47 DEBUG cache:45 - Loading template for "v3html/test-view/v3-html-test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/test-view/v3-html-test-view-charts.ftl"
+2022-07-29 07:53:47 DEBUG cache:45 - Couldn't find template in cache for "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed); will try to load it.
+2022-07-29 07:53:47 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/test-view/v3-html-standard_en.ftl"): Not found
+2022-07-29 07:53:47 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/test-view/v3-html-standard.ftl"): Found
+2022-07-29 07:53:47 DEBUG cache:45 - Loading template for "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/test-view/v3-html-standard.ftl"
+2022-07-29 07:53:47 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-07-29 07:53:47 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-07-29 07:53:47 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-07-29 07:53:47 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-07-29 07:53:47 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-07-29 07:53:47 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-07-29 07:53:47 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-07-29 07:53:47 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-07-29 07:53:47 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-07-29 07:53:47 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-07-29 07:53:47 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-07-29 07:53:47 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-07-29 07:53:47 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-07-29 07:53:47 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-07-29 07:53:47 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-07-29 07:53:47 DEBUG cache:45 - Couldn't find template in cache for "v3html/category-view/v3-html-category-view.ftl"("en", UTF-8, parsed); will try to load it.
+2022-07-29 07:53:47 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/category-view/v3-html-category-view_en.ftl"): Not found
+2022-07-29 07:53:47 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/category-view/v3-html-category-view.ftl"): Found
+2022-07-29 07:53:47 DEBUG cache:45 - Loading template for "v3html/category-view/v3-html-category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/category-view/v3-html-category-view.ftl"
+2022-07-29 07:53:47 DEBUG cache:45 - Couldn't find template in cache for "v3html/exception-view/v3-html-exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+2022-07-29 07:53:47 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/exception-view/v3-html-exception-view_en.ftl"): Not found
+2022-07-29 07:53:47 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/exception-view/v3-html-exception-view.ftl"): Found
+2022-07-29 07:53:47 DEBUG cache:45 - Loading template for "v3html/exception-view/v3-html-exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/exception-view/v3-html-exception-view.ftl"
+2022-07-29 07:53:47 DEBUG cache:45 - Couldn't find template in cache for "v3html/author-view/v3-html-author-view.ftl"("en", UTF-8, parsed); will try to load it.
+2022-07-29 07:53:47 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/author-view/v3-html-author-view_en.ftl"): Not found
+2022-07-29 07:53:47 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/author-view/v3-html-author-view.ftl"): Found
+2022-07-29 07:53:47 DEBUG cache:45 - Loading template for "v3html/author-view/v3-html-author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/author-view/v3-html-author-view.ftl"
+2022-07-29 07:53:47 DEBUG cache:45 - Couldn't find template in cache for "v3html/dashboard-view/v3-html-dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+2022-07-29 07:53:47 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/dashboard-view/v3-html-dashboard-view_en.ftl"): Not found
+2022-07-29 07:53:47 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/dashboard-view/v3-html-dashboard-view.ftl"): Found
+2022-07-29 07:53:47 DEBUG cache:45 - Loading template for "v3html/dashboard-view/v3-html-dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/dashboard-view/v3-html-dashboard-view.ftl"
+2022-07-29 07:53:47 DEBUG cache:45 - Couldn't find template in cache for "v3html/logs-view/v3-html-testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+2022-07-29 07:53:47 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/logs-view/v3-html-testrunner-logs-view_en.ftl"): Not found
+2022-07-29 07:53:47 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/logs-view/v3-html-testrunner-logs-view.ftl"): Found
+2022-07-29 07:53:47 DEBUG cache:45 - Loading template for "v3html/logs-view/v3-html-testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/logs-view/v3-html-testrunner-logs-view.ftl"

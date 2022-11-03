@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">LinkedinSuite</th></tr>
+<tr><td><a href="#t0">LinkedinTest</a></td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">128,133</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">LinkedinSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LinkedinTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.qa.linkedin.testcases.LinkedinFeedPageTest</td><td><a href="#m0">verifyFeedPageTitleTest</a></td><td rowspan="1">1658975381851</td><td rowspan="1">22</td></tr><tr class="failedeven"><td><a href="#m1">verifyProfileRailcardTest</a></td><td rowspan="1">1658975389298</td><td rowspan="1">10158</td></tr><tr class="failedodd"><td rowspan="1">com.qa.linkedin.testcases.LinkedinHomePageTest</td><td><a href="#m2">verifyLinkedinHomePageTitle</a></td><td rowspan="1">1658975344811</td><td rowspan="1">51</td></tr><tr class="failedeven"><td rowspan="1">com.qa.linkedin.testcases.LinkedinLoginPageTest</td><td><a href="#m3">verifyLoginPageTitle</a></td><td rowspan="1">1658975358452</td><td rowspan="1">110</td></tr><tr><th colspan="4">LinkedinTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.qa.linkedin.testcases.LinkedinFeedPageTest</td><td><a href="#m4">doLoginTest</a></td><td rowspan="1">1658975368821</td><td rowspan="1">11319</td></tr><tr class="passedeven"><td><a href="#m5">doLogoutTest</a></td><td rowspan="1">1658975380147</td><td rowspan="1">1694</td></tr><tr class="passedodd"><td rowspan="1">com.qa.linkedin.testcases.LinkedinHomePageTest</td><td><a href="#m6">verifyLinkedinLogoTest</a></td><td rowspan="1">1658975345509</td><td rowspan="1">93</td></tr><tr class="passedeven"><td rowspan="1">com.qa.linkedin.testcases.LinkedinLoginPageTest</td><td><a href="#m7">verifySigninHeaderText</a></td><td rowspan="1">1658975359477</td><td rowspan="1">52</td></tr><tr class="passedodd"><td rowspan="8">com.qa.linkedin.testcases.LinkedinSearchResultsTest</td><td><a href="#m8">doLoginTest</a></td><td rowspan="1">1658975406949</td><td rowspan="1">8188</td></tr><tr class="passedodd"><td><a href="#m9">doLogoutTest</a></td><td rowspan="1">1658975455469</td><td rowspan="1">3332</td></tr><tr class="passedodd"><td><a href="#m10">doPeopleSearchTest</a></td><td rowspan="6">1658975443885</td><td rowspan="6">5817</td></tr><tr class="passedodd"><td><a href="#m11">doPeopleSearchTest</a></td></tr><tr class="passedodd"><td><a href="#m12">doPeopleSearchTest</a></td></tr><tr class="passedodd"><td><a href="#m13">doPeopleSearchTest</a></td></tr><tr class="passedodd"><td><a href="#m14">doPeopleSearchTest</a></td></tr><tr class="passedodd"><td><a href="#m15">doPeopleSearchTest</a></td></tr></tbody>
+</table>
+<h2>LinkedinTest</h2><h3 id="m0">com.qa.linkedin.testcases.LinkedinFeedPageTest#verifyFeedPageTitleTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Feed | LinkedIn is not present expected [true] but found [false]
+	at com.qa.linkedin.testcases.LinkedinFeedPageTest.verifyFeedPageTitleTest(LinkedinFeedPageTest.java:50)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.linkedin.testcases.LinkedinFeedPageTest#verifyProfileRailcardTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[class*=&apos;feed-identity-module&apos;]&quot;}
+  (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;DESKTOP-0M1MH5T&apos;, ip: &apos;192.168.0.172&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [071f49cd83cd05765f49b2ae1f419272, findElement {using=css selector, value=div[class*=&apos;feed-identity-module&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60563}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60563/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 071f49cd83cd05765f49b2ae1f419272
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy16.isDisplayed(Unknown Source)
+	at com.qa.linkedin.pages.LinkedinFeedPage.isProfileRailCardPresent(LinkedinFeedPage.java:43)
+	at com.qa.linkedin.testcases.LinkedinFeedPageTest.verifyProfileRailcardTest(LinkedinFeedPageTest.java:42)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qa.linkedin.testcases.LinkedinHomePageTest#verifyLinkedinHomePageTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.qa.linkedin.testcases.LinkedinHomePageTest.verifyLinkedinHomePageTitle(LinkedinHomePageTest.java:30)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.qa.linkedin.testcases.LinkedinLoginPageTest#verifyLoginPageTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: signin page title is not correct expected [true] but found [false]
+	at com.qa.linkedin.testcases.LinkedinLoginPageTest.verifyLoginPageTitle(LinkedinLoginPageTest.java:37)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.qa.linkedin.testcases.LinkedinFeedPageTest#doLoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.qa.linkedin.testcases.LinkedinFeedPageTest#doLogoutTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.qa.linkedin.testcases.LinkedinHomePageTest#verifyLinkedinLogoTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.qa.linkedin.testcases.LinkedinLoginPageTest#verifySigninHeaderText</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.qa.linkedin.testcases.LinkedinSearchResultsTest#doLoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.qa.linkedin.testcases.LinkedinSearchResultsTest#doLogoutTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.qa.linkedin.testcases.LinkedinSearchResultsTest#doPeopleSearchTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Lavanya</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.qa.linkedin.testcases.LinkedinSearchResultsTest#doPeopleSearchTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Venkatesh</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.qa.linkedin.testcases.LinkedinSearchResultsTest#doPeopleSearchTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Jyoshna</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.qa.linkedin.testcases.LinkedinSearchResultsTest#doPeopleSearchTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Ramesh</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.qa.linkedin.testcases.LinkedinSearchResultsTest#doPeopleSearchTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Shafi</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.qa.linkedin.testcases.LinkedinSearchResultsTest#doPeopleSearchTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Priyanka</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="LinkedinSuite">
+<listeners>
+ <listener class-name="com.qa.linkedin.listeners.ExtentReportListener"></listener>
+</listeners>
+  <test thread-count="5" name="LinkedinTest">
+    <classes>
+      <class name="com.qa.linkedin.testcases.LinkedinHomePageTest"/>
+      <class name="com.qa.linkedin.testcases.LinkedinLoginPageTest"></class>
+      <class name="com.qa.linkedin.testcases.LinkedinFeedPageTest"></class>
+      <class name="com.qa.linkedin.testcases.LinkedinSearchResultsTest"></class>
+    </classes>
+  </test> <!-- LinkedinTest -->
+</suite> <!-- LinkedinSuite -->
