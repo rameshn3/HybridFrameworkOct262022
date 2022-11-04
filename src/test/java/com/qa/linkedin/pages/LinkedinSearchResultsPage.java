@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.By;
 
 import com.qa.linkedin.util.BasePageWebActions;
 
@@ -16,7 +17,7 @@ public class LinkedinSearchResultsPage extends BasePageWebActions{
 		PageFactory.initElements(driver,this);
 	}
 	
-	@FindBy(xpath = "//a[@class='app-aware-link'][contains(.,'See all people results')]")
+	@FindBy(xpath = "//div[contains(@class,'search-results')]/a[1]")
 	private WebElement seeAllPeopleResultsLink;
 	
 	@FindBy(xpath="//div[@class='search-results-container']/h2")
@@ -37,7 +38,10 @@ public class LinkedinSearchResultsPage extends BasePageWebActions{
 	
 	public void clickOnSeeAllPeopleResultsLink() throws InterruptedException {
 		log.info("click on seeAllPeopleResultsLink");
-		click(seeAllPeopleResultsLink);
+		if(isElementPresent(By.xpath("//div[contains(@class,'search-results')]/a[1]"))) {
+			click(seeAllPeopleResultsLink);
+		}
+
 	}
 	
 	
