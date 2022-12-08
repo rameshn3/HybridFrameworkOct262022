@@ -3,8 +3,13 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
+import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import com.aventstack.extentreports.ExtentReports;
@@ -14,89 +19,121 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
+import com.qa.linkedin.base.TestBase;
+import com.qa.linkedin.base.WebDriverFactory;
+import com.qa.linkedin.util.BasePageWebActions;
 import com.qa.linkedin.util.TestUtil;
 
-public class ExtentReportListener implements ITestListener{
+public class ExtentReportListener extends TestBase implements ITestListener {
+    private static ExtentReports extentReports = ExtentManager.getInstance();
+    private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
+    private static final Logger log = LogManager.getLogger(ExtentReportListener.class.getName());
 
-	private static ExtentReports extentReport = ExtentManager.createInstance();
-	private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
-	
+    /**
+     * Invoked after the test class is instantiated and before
+     * any configuration method is called.
+     *
+     * @param context
+     */
+    public void onStart(ITestContext context) {
+        log.info("onStart -> Test Tag Name: " + context.getName());
+        ITestNGMethod methods[] = context.getAllTestMethods();
+        log.info("These methods will be executed in this <test> tag");
+        for (ITestNGMethod method: methods) {
+            log.info(method.getMethodName());
+        }
+    }
 
-	public void onTestStart(ITestResult result) {
-	
-		ExtentTest test = extentReport.createTest(result.getTestClass().getName()+" :: "+result.getMethod().getMethodName());
-		extentTest.set(test);
-		extentTest.get().getModel().setStartTime(getTime(result.getStartMillis()));
+    /**
+     * Invoked after all the tests have run and all their
+     * Configuration methods have been called.
+     *
+     * @param context
+     */
+    public void onFinish(ITestContext context) {
+        log.info("onFinish -> Test Tag Name: " + context.getName());
+        extentReports.flush();
+    }
+    /**
+     * Invoked each time before a test method will be invoked.
+     *
+     * @param result
+     * @see ITestResult#STARTED
+     */
+    public void onTestStart(ITestResult result) {
+        ExtentTest test = extentReports.createTest(result.getInstanceName() + " :: "
+                + result.getMethod().getMethodName());
+        extentTest.set(test);
+    }
 
-	}
+    /**
+     * Invoked each time a test method succeeds.
+     *
+     * @param result
+     * @see ITestResult#SUCCESS
+     */
+    public void onTestSuccess(ITestResult result) {
+        log.info("onTestSuccess -> Test Method Name: " + result.getName());
+        String methodName = result.getMethod().getMethodName();
+        String logText = "<b>" + "Test Method " + methodName + " Successful" + "</b>";
+        Markup m = MarkupHelper.createLabel(logText, ExtentColor.GREEN);
+        extentTest.get().log(Status.PASS, m);
+    }
 
-	public void onTestSuccess(ITestResult result) {
-		System.out.println((result.getMethod().getMethodName() + " passed!"));
-		String methodName=result.getMethod().getMethodName();
-		String logText="<b>Test Method  "+ methodName.toUpperCase()+ " Successful</b>";		
-		Markup m=MarkupHelper.createLabel(logText, ExtentColor.GREEN);
-		extentTest.get().log(Status.PASS,m);
-		extentTest.get().getModel().setEndTime(getTime(result.getEndMillis()));
-	}
+    /**
+     * Invoked each time a test method fails.
+     *
+     * @param result
+     * @see ITestResult#FAILURE
+     */
+    public void onTestFailure(ITestResult result) {
+        log.info("onTestFailure -> Test Method Name: " + result.getName());
+        String methodName = result.getMethod().getMethodName();
+        String exceptionMessage = Arrays.toString(result.getThrowable().getStackTrace());
+        extentTest.get().fail("<details>" + "<summary>" + "<b>" + "<font color=red>" +
+                "Exception Occurred: Click to see details: " + "</font>" + "</b>" + "</summary>" +
+        exceptionMessage.replaceAll(",", "<br>") + "</details>" + " \n");
 
-	public void onTestFailure(ITestResult result) {
-		System.out.println((result.getMethod().getMethodName() + " failed!"));
-			
-		String methodName=result.getMethod().getMethodName();
-		String excepionMessage=Arrays.toString(result.getThrowable().getStackTrace());
-		extentTest.get().fail("<details><summary><b><font color=red>" + "Exception Occured:Click to see"
-				+ "</font></b ></summary>" +excepionMessage.replaceAll(",", "<br>")+"</details>\n");
-		
-		try {
-			String path=TestUtil.captureScreenshot(result.getMethod().getMethodName());
-			extentTest.get().fail("<b><font color=red>"+ "Screenshot of failure" +"</font></b>", MediaEntityBuilder.createScreenCaptureFromPath(path).build());
-			
-		} catch (IOException e) {
-			extentTest.get().fail("Test Failed, cannot attach screenshot");
-			e.printStackTrace();
-		}
-		String logText="<b>Test Method"+methodName+" Failed</b>";
-		Markup m = MarkupHelper.createLabel(logText, ExtentColor.RED);
-		extentTest.get().log(Status.FAIL, m);
-		
-		extentTest.get().getModel().setEndTime(getTime(result.getEndMillis()));
-	}
+        String browser = WebDriverFactory.getInstance().getBrowser();
+        WebDriver driver = WebDriverFactory.getInstance().getDriver(browser);
+        BasePageWebActions cd = new BasePageWebActions();
+        String path = cd.takeScreenshot(result.getName(), browser);
+        try {
+            extentTest.get().fail("<b>" + "<font color=red>" +
+                    "Screenshot of failure" + "</font>" + "</b>",
+                    MediaEntityBuilder.createScreenCaptureFromPath(path).build());
+        } catch (IOException e) {
+            extentTest.get().fail("Test Method Failed, cannot attach screenshot");
+        }
 
-	public void onTestSkipped(ITestResult result) {
-		System.out.println((result.getMethod().getMethodName() + " skipped!"));
-		String methodName=result.getMethod().getMethodName();
-		String excepionMessage=Arrays.toString(result.getThrowable().getStackTrace());
-		extentTest.get().fail("<details><summary><b><font color=yellow>" + "Exception Occured:Click to see"
-				+ "</font></b ></summary>" +excepionMessage.replaceAll(",", "<br>")+"</details>\n");
-		String logText="<b>Test Case " + methodName+ " Skipped </b>";		
-		Markup m=MarkupHelper.createLabel(logText, ExtentColor.YELLOW);
-		extentTest.get().log(Status.SKIP, m);
-	}
+        String logText = "<b>" + "Test Method " + methodName + " Failed" + "</b>";
+        Markup m = MarkupHelper.createLabel(logText, ExtentColor.RED);
+        extentTest.get().log(Status.FAIL, m);
+    }
 
-	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		System.out.println(("onTestFailedButWithinSuccessPercentage for " + result.getMethod().getMethodName()));
+    /**
+     * Invoked each time a test method is skipped.
+     *
+     * @param result
+     * @see ITestResult#SKIP
+     */
+    public void onTestSkipped(ITestResult result) {
+        log.info("onTestSkipped -> Test Method Name: " + result.getName());
+        String methodName = result.getMethod().getMethodName();
+        String logText = "<b>" + "Test Method " + methodName + " Skipped" + "</b>";
+        Markup m = MarkupHelper.createLabel(logText, ExtentColor.YELLOW);
+        extentTest.get().log(Status.PASS, m);
+    }
 
-	}
-
-	public void onStart(ITestContext context) {
-
-		
-
-	}
-
-	public void onFinish(ITestContext context) {
-		
-		if (extentReport != null) {
-
-			extentReport.flush();
-			
-		}
-
-	}
-	private Date getTime(long millis) {
-		Calendar calendar = Calendar.getInstance();
-		calendar.setTimeInMillis(millis);
-		return calendar.getTime();
-	}
-
+    /**
+     * Invoked each time a method fails but has been annotated with
+     * successPercentage and this failure still keeps it within the
+     * success percentage requested.
+     *
+     * @param result <code>ITestResult</code> containing information about the run test
+     * @see ITestResult#SUCCESS_PERCENTAGE_FAILURE
+     */
+    public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+        // Ignore this
+    }
 }

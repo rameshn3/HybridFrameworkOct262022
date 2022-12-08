@@ -1,22 +1,16 @@
 package com.qa.linkedin.testcases;
-
-import com.qa.linkedin.pages.LinkedinLoginPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
-
 import com.qa.linkedin.base.TestBase;
 import com.qa.linkedin.pages.LinkedinHomePage;
-
 import org.testng.annotations.BeforeClass;
-
 import java.io.IOException;
-
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
 public class LinkedinHomePageTest extends TestBase{
-    private Logger log= LogManager.getLogger(LinkedinHomePageTest.class);
+    private Logger log= LogManager.getLogger(LinkedinHomePageTest.class.getName());
 	
   @Test
   public void verifyLinkedinLogoTest() {
@@ -34,7 +28,7 @@ public class LinkedinHomePageTest extends TestBase{
   }
   
   
-  @BeforeClass
+  @BeforeClass(alwaysRun=true)
   public void beforeClass() throws IOException {
 	 log.info("create the page class object"); 
 	 homePg=new LinkedinHomePage();

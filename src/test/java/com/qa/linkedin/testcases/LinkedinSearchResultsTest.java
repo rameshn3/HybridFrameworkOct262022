@@ -20,12 +20,12 @@ import org.testng.annotations.DataProvider;
 
 public class LinkedinSearchResultsTest extends TestBase{
 
-	private static String filePath=Constants.USER_DIRECTORY+Constants.EXCEL_DIRECTORY;
+	private static String filePath=Constants.EXCEL_DIRECTORY;
 
-	private Logger log= LogManager.getLogger(LinkedinSearchResultsTest.class);
+	private Logger log= LogManager.getLogger(LinkedinSearchResultsTest.class.getName());
  
   
-  @BeforeClass
+  @BeforeClass(alwaysRun=true)
   public void beforeClass() throws InterruptedException {
 	  log.info("creating login page object");
 	  homePg=new LinkedinHomePage();

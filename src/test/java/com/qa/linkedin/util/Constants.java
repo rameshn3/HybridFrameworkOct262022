@@ -9,8 +9,8 @@ public class Constants {
 	    public static final String EDGE = "edge";
 	    public static final long IMPLICIT_WAIT = 10;
 	    public static final long EXPLICIT_WAIT = 30;
-	    public static final String CONFIG_DIRECTORY = "\\src\\test\\java\\com\\qa\\linkedin\\config\\config.properties";
-	    public static final String EXCEL_DIRECTORY = "\\src\\test\\java\\com\\qa\\linkedin\\data\\testData.xlsx";
-	    
+	    public static final String CONFIG_DIRECTORY =USER_DIRECTORY + "\\src\\test\\java\\com\\qa\\linkedin\\config\\config.properties";
+	    public static final String EXCEL_DIRECTORY = USER_DIRECTORY + "\\src\\test\\java\\com\\qa\\linkedin\\data\\testData.xlsx";
+	    public static final String REPORTS_DIRECTORY= USER_DIRECTORY + "/reports/";
 	    
 }

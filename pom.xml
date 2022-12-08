@@ -32,10 +32,12 @@
      </suiteXmlFiles>
     </configuration>
    </plugin>
-
-
-
   </plugins>
+  <resources>
+  <resource>
+  <directory>src/test/java/com/qa/linkedin/config</directory>
+  </resource>
+  </resources>
 
  </build>
  

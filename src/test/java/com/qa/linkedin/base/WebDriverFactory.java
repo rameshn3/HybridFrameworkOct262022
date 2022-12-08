@@ -1,4 +1,6 @@
 package com.qa.linkedin.base;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -15,7 +17,8 @@ import java.time.Duration;
 
 
 public class WebDriverFactory {
-    // Singleton
+	 private static final Logger log = LogManager.getLogger(WebDriverFactory.class.getName());
+	// Singleton
     // Only one instance of the class can exist at a time
     private static final WebDriverFactory instance = new WebDriverFactory();
 
@@ -27,7 +30,7 @@ public class WebDriverFactory {
     }
 
     private static ThreadLocal<WebDriver> threadedDriver = new ThreadLocal<WebDriver>();
-
+    private static ThreadLocal<String> threadedBrowser = new ThreadLocal<String>();
     /***
      * Get driver instance based on the browser type
      * @param browser
@@ -35,6 +38,7 @@ public class WebDriverFactory {
      */
     public WebDriver getDriver(String browser) {
         WebDriver driver = null;
+        threadedBrowser.set(browser);
         if (threadedDriver.get() == null) {
             try {
                 if (browser.equalsIgnoreCase(Constants.FIREFOX)) {
@@ -64,6 +68,11 @@ public class WebDriverFactory {
         return threadedDriver.get();
     }
 
+    public String getBrowser() {
+        return threadedBrowser.get();
+    }
+
+    
     /***
      * Quit driver instance
      */

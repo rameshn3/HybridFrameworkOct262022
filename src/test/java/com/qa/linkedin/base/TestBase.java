@@ -10,7 +10,9 @@ import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import com.qa.linkedin.pages.LinkedinFeedPage;
 import com.qa.linkedin.pages.LinkedinHomePage;
@@ -28,7 +30,7 @@ public class TestBase {
 	protected LinkedinHomePage homePg;
 	protected LinkedinFeedPage feedPg;
 	protected LinkedinSearchResultsPage searchPg;
-	private static final Logger log = LogManager.getLogger(TestBase.class);
+	private static final Logger log = LogManager.getLogger(TestBase.class.getName());
 
 	/**
 	 * This method reads the property value from properties file
@@ -42,7 +44,7 @@ public class TestBase {
 		Properties prop = new Properties();
 		log.info("Read the properties file");
 		try {
-			FileInputStream fis = new FileInputStream(new File(Constants.USER_DIRECTORY+Constants.CONFIG_DIRECTORY));
+			FileInputStream fis = new FileInputStream(new File(Constants.CONFIG_DIRECTORY));
 			prop.load(fis);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
