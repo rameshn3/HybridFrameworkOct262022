@@ -4,7 +4,8 @@
 <listeners>
  <listener class-name="com.qa.linkedin.listeners.ExtentReportListener"></listener>
 </listeners>
-  <test thread-count="5" name="LinkedinTest">
+  <test thread-count="5" name="LinkedinTest" preserve-order="true">
+  <parameter name="browser" value="chrome"></parameter>
     <classes>
       <class name="com.qa.linkedin.testcases.LinkedinHomePageTest"/>
       <class name="com.qa.linkedin.testcases.LinkedinLoginPageTest"></class>

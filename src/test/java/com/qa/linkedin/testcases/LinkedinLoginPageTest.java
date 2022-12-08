@@ -12,15 +12,13 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 
 public class LinkedinLoginPageTest extends TestBase{
-    private Logger log= LogManager.getLogger(LinkedinLoginPageTest.class);
-  LinkedinLoginPage loginPg;
-  LinkedinHomePage homePg;
-  @BeforeClass
+    private Logger log= LogManager.getLogger(LinkedinLoginPageTest.class.getName());
+  
+  @BeforeClass(alwaysRun=true)
   public void beforeClass() throws InterruptedException {
 	  log.info("creating login page object");
 	  homePg=new LinkedinHomePage();
 	  loginPg=new LinkedinLoginPage();
-	  
 	  loginPg= homePg.clickOnSigninLink();
   }
 
