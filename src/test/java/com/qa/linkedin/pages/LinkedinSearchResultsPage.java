@@ -20,7 +20,7 @@ public class LinkedinSearchResultsPage extends BasePageWebActions{
 	@FindBy(xpath = "//div[contains(@class,'search-results')]/a[1]")
 	private WebElement seeAllPeopleResultsLink;
 	
-	@FindBy(xpath="//div[@class='search-results-container']/h2")
+	@FindBy(xpath="//h2[@class='pb2 t-black--light t-14']")
 	private WebElement searchResultsText;
 	
 	@FindBy(xpath="//*[@class='global-nav__nav']/ul/li[1]/a")

@@ -9,6 +9,7 @@ import com.qa.linkedin.pages.LinkedinFeedPage;
 import com.qa.linkedin.pages.LinkedinHomePage;
 import com.qa.linkedin.pages.LinkedinLoginPage;
 import com.qa.linkedin.pages.LinkedinSearchResultsPage;
+import com.qa.linkedin.util.Constants;
 import com.qa.linkedin.util.ExcelUtils;
 
 import java.io.IOException;
@@ -19,13 +20,11 @@ import org.testng.annotations.DataProvider;
 
 public class LinkedinSearchResultsTest extends TestBase{
 
-	private static String filePath=System.getProperty("user.dir")+"\\src\\test\\java\\com\\qa\\linkedin\\data\\testData.xlsx";
+	private static String filePath=Constants.USER_DIRECTORY+Constants.EXCEL_DIRECTORY;
 
 	private Logger log= LogManager.getLogger(LinkedinSearchResultsTest.class);
-  LinkedinLoginPage loginPg;
-  LinkedinHomePage homePg;
-  LinkedinFeedPage feedPg;
-  LinkedinSearchResultsPage searchPg;
+ 
+  
   @BeforeClass
   public void beforeClass() throws InterruptedException {
 	  log.info("creating login page object");

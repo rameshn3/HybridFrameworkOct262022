@@ -17,17 +17,17 @@ import org.testng.annotations.AfterClass;
 
 public class LinkedinHomePageTest extends TestBase{
     private Logger log= LogManager.getLogger(LinkedinHomePageTest.class);
-	LinkedinHomePage lhomePg;
+	
   @Test
   public void verifyLinkedinLogoTest() {
 	  log.info("started verifyLinkedinLogoTest()");
-	  Assert.assertTrue(lhomePg.isLinkedinLogoPresent(), "linkedinLogo is not present");
+	  Assert.assertTrue(homePg.isLinkedinLogoPresent(), "linkedinLogo is not present");
   }
   
   @Test
   public void verifyLinkedinHomePageTitle() {
 	  log.info("started verifying the linkedin home page title");
-	  String actTitle=lhomePg.getLinkedinHomePagetitle();
+	  String actTitle=homePg.getLinkedinHomePagetitle();
 	  log.info("actual page title is:"+actTitle);
 	  Assert.assertTrue(actTitle.contains("Log In"));
 	  
@@ -37,7 +37,7 @@ public class LinkedinHomePageTest extends TestBase{
   @BeforeClass
   public void beforeClass() throws IOException {
 	 log.info("create the page class object"); 
-	 lhomePg=new LinkedinHomePage();
+	 homePg=new LinkedinHomePage();
 	 
   }
 
